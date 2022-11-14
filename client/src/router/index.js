@@ -1,5 +1,4 @@
 import { createWebHistory, createRouter } from 'vue-router';
-import nProgress from 'nprogress';
 
 const routes = [
 	{
