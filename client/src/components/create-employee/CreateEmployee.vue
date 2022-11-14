@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button class="btn btn-primary"><font-awesome-icon icon="fas fa-user-plus" />Adicionar</button>
+                        <button @click="SubmitEmployee" class="btn btn-primary"><font-awesome-icon icon="fas fa-user-plus" />Adicionar</button>
                     </div>
                 </form>
 
@@ -62,6 +62,7 @@
 
 import useVuelidate from '@vuelidate/core'
 import { required } from '@vuelidate/validators'
+import ServiceUser from '../../services/user'
 
 export default { 
 
@@ -72,10 +73,10 @@ export default {
     data() {
         return {
             employeeForm: {
-                name_employee: '',
-                role_employee: '',
-                salary_employee: '',
-                registration_employee: ''
+                name_employee: null,
+                role_employee: null,
+                salary_employee: null,
+                registration_employee: null,
             },
             isSubmitted: false // não pode submiter, quem pode submiter é os if de cima
         }
@@ -88,6 +89,18 @@ export default {
             registration_employee: { required },
         }
     },
+    methods: {
+        async SubmitEmployee() {
+            try {
+                await ServiceUser.createEmployee(this.employeeForm);
+                this.$router.push({
+                    name: 'list',
+                })
+            } catch (error) {
+                console.log(error)
+            }
+        }
+    }
   
 }
 </script>

@@ -3,17 +3,17 @@ import { createWebHistory, createRouter } from 'vue-router';
 const routes = [
 	{
 		path: '/',
-		name: 'Create New Employee',
+		name: 'home',
 		component: import('../components/create-employee/CreateEmployee'),
 	},
     {
     path: '/lista',
-		name: 'List Employees',
+		name: 'list',
 		component: import('../components/list-employee/ListEmployee'),
     },
     {
     path: '/edit',
-		name: 'Edit Employees',
+		name: 'edit',
 		component: import('../components/edit-employee/EditEmployee'),
     }
 ];
