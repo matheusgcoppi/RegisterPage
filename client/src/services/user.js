@@ -2,7 +2,7 @@ import config from './config'
 
 export default {
 
-    // all employees http://localhost:3333/users/
+    //list all employees http://localhost:3333/users/
     async getEmployees() {
         try {
           const response = await config().get('/users');
