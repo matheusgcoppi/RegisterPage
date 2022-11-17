@@ -93,6 +93,8 @@ export default {
         async SubmitEmployee() {
             try {
                 await ServiceUser.createEmployee(this.employeeForm);
+                this.$router.push({ path: '/lista' })
+                this.$router.push({ name: 'list' })
                 
             } catch (error) {
                 return console.log(error)

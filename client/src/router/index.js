@@ -12,8 +12,8 @@ const routes = [
 		component: import('../components/list-employee/ListEmployee'),
     },
     {
-    path: '/edit',
-		name: 'edit',
+    path: '/edit/:id',
+		name: 'update',
 		component: import('../components/edit-employee/EditEmployee'),
     }
 ];
