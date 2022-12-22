@@ -1,5 +1,6 @@
 # RegisterPage
 technologies used: Azure + SQL Server + Prisma + Vue.js + Node.js
+
 A simple register page using the technologies above.
 In this project was my first time using SQL with Azure and Vue in the front-end and it was a good experience.
 Look at the video below, it's my project working.
