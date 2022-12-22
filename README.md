@@ -2,7 +2,7 @@
 technologies used: Azure + SQL Server + Prisma + Vue.js + Node.js
 
 A simple register page using the technologies above. 
-In that project it was my first time using SQL with Azure and Vue on the front-end.. It was a good experience. 
+In that project it was my first time using SQL with Azure and Vue on the front-end. It was a good experience. 
 Look at the video below, that's my project working.
 
 Uma simples pagina de registro utilizando as tecnologias acima.
